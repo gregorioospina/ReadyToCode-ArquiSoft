@@ -5,6 +5,8 @@ class Carro:
 		self.idUsuario = use
 		self.nombreDuenio = nod
 
+		## GETTERS ##
+		
 	def darPlaca(self):
 		return placa
 
@@ -13,6 +15,8 @@ class Carro:
 
 	def darNombreDuenio(self):
 		return nombreDuenio	
+		
+		## SETTERS ##
 
 	def setPlaca(self, pla):
 		self.placa = pla;
