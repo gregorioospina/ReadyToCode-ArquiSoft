@@ -1,45 +1,45 @@
 class Usuario:
-		def __init__(self, nom, log, iden, corr, fot):
-			
-			self.nombre = nom
-			self.login = log
-			self.identificacion = iden
-			self.correo = corr
-			self.foto = fot
+	def __init__(self, nom, log, iden, corr, fot):
+
+		self.nombre = nom
+		self.login = log
+		self.identificacion = iden
+		self.correo = corr
+		self.foto = fot
 
 
-		## GETTERS ##	
-			
-		def darNombre(self):
-			return nombre
+	## GETTERS ##	
 
-		def darLogin(self):
-			return login
+	def darNombre(self):
+		return nombre
 
-		def darId(self):
-			return identificacion
+	def darLogin(self):
+		return login
 
-		def darCorreo(self):
-			return correo
+	def darId(self):
+		return identificacion
 
-		def darFoto(self):
-			return foto
+	def darCorreo(self):
+		return correo
 
-		## SETTERS ##	
+	def darFoto(self):
+		return foto
 
-		def setNombre(self, nombreX):
-			self.nombre = nombreX
+	## SETTERS ##	
 
-		def setLogin(self, loginX):
-			self.login = loginX
+	def setNombre(self, nombreX):
+		self.nombre = nombreX
 
-		def setId (self, idX):
-			self.identificacion = idX
+	def setLogin(self, loginX):
+		self.login = loginX
 
-		def setCorreo (self, correoX):
-			self.correo = correoX
+	def setId (self, idX):
+		self.identificacion = idX
 
-		def setFoto (self, fotoX):
-			self.foto = fotoX
+	def setCorreo (self, correoX):
+		self.correo = correoX
+
+	def setFoto (self, fotoX):
+		self.foto = fotoX
 
 
