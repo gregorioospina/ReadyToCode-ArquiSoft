@@ -5,12 +5,7 @@ from random import uniform
 
 producer = KafkaProducer(bootstrap_servers=['172.24.41.128:8081'], 
 											value_serializer=lambda v: json.dumps(v).encode('utf-8'))
-
-											 
-tiempo = time.time()
-tiempo1 = tiempo + 180
-tiempo2 = tiempo + 3600											 
-												 
+										 
 while True:
 
 
