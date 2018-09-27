@@ -13,5 +13,5 @@ for message in consumer:
                                           message.offset, message.key,
                                           message.value))
 
-    r = requests.post("http://172.24.41.128:8082/reserva/", data={'costo': message.value['costo'], 'fechaInicio': message.value['fechaInicio'], 'fechaCaduca': message.value['fechaCaduca'], 'carro': message.value['carro'], 'parq$
+    r = requests.post("http://172.24.41.128:8082/reserva/", data={'costo': message.value['costo'], 'fechaInicio': message.value['fechaInicio'],'fechaCaduca': message.value['fechaCaduca'], 'carro': message.value['carro'], 'parqueadero': message.value['parqueadero'],'duenoParqueadero': message.value['duenoParqueadero'], 'usuarioParqueadero': message.value['usuarioParqueadero']})
     print (r.status_code, r.reason)
